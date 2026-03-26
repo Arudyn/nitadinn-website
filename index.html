@@ -2,9 +2,125 @@
 <html lang=""en">
 <head>
     <meta charset=""UTF-8">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 6px;
+        }
+        p {
+            color: #555555;
+            font-size: 15px;
+        }
+        .score-badge {
+            background-color: #003580;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .score-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .score-label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #222222;
+        }
+        .review-count {
+            font-size: 14px;
+            color: #777777;
+        }
+        .facilities-list {
+            display:flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 16px;
+        }
+        .facilities-list li {
+            background-color: #f0f0f0;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #333333;
+        }
+        .reviews-list  {
+            display: flex;
+            gap: 16px;
+            list-style: none;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        .reviews-list li {
+            flex: 1;
+            min-width: 220px;
+            background-color: #f9f9f9;
+            padding: 16px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+    </style>
     <title>NitaDinn Guest House</title>
 </head>
 <body>
-    
+    <div class="container">
+    <h1>NitaDinn Guest House</h1>
+    <p>PT19420 Pantai Peranginan Rhu 10 Penarek, 22120 Kampong Ru Sepuloh, Malaysia</p>
+    <div class="score-row">
+        <span class="score-badge">9.3</span>
+        <span class="score-label">Superb</span>
+        <span class="review-count">27 reviews</span>
+    </div>
+    <img src="https://placehold.co/800x400" alt="NitaDinn Guest House exterior">
+    <h2>Facilities</h2>
+    <ul class="facilities-list">
+        <li>Free Wifi</li>
+        <li>Free parking</li>
+        <li>Air conditioning</li>
+        <li>Sea view</li>
+        <li>BBQ Facilities</li>
+        <li>Private bathroom</li>
+        <li>Kitchen</li>
+        <li>Terrace</li>
+    </ul>
+    <h2>Guest Reviews</h2>
+    <ul class="reviews-list">
+        <li>
+            <strong>Nadzir</strong> - Malaysia
+            <p>"Comfortable accomodation, clean and spacious house, close to the sea with peaceful view</p>
+        </li>
+        <li>
+            <strong>Munirah</strong> - Malaysia
+            <p>"Strategic location, quick access to dining and beach fun. A peaceful atmosphere."</p>
+        </li>
+        <li>
+            <strong>Ruqayyah</strong> - United Kingdom
+            <p>"This property is across the road from the beach. On Friday mornings there is a market from 8am-noon."</p>
+        </li>
+    </ul>
+    </div>
 </body>
 </html>
