@@ -1,6 +1,16 @@
+:root {
+    --color-primary: #003580;
+    --color-background: #f2f2f2;
+    --color-card: #ffffff;
+    --color-text-main: #222222;
+    --color-text-muted: #777777;
+    --color-border: #e0e0e0;
+    --border-radius-card: 12px;
+    --spacing-section: 32px;
+}
 <style>
         body {
-            background-color: #f2f2f2;
+            background-color: var(--color-background);
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -10,7 +20,7 @@
             margin: 40px auto;
             background-color: white;
             padding: 40px;
-            border-radius: 12px;
+            border-radius: var(--border-radius-card);;
         }
         h1 {
             font-size: 28px;
@@ -21,7 +31,7 @@
             font-size: 15px;
         }
         .score-badge {
-            background-color: #003580;
+            background-color: var(--color-primary);
             color: white;
             padding: 4px 10px;
             border-radius: 6px;
@@ -42,11 +52,11 @@
         .score-label {
             font-size: 16px;
             font-weight: bold;
-            color: #222222;
+            color: var(--color-text-main);
         }
         .review-count {
             font-size: 14px;
-            color: #777777;
+            color: var(--color-text-muted);;
         }
         .facilities-list {
             display:flex;
@@ -77,7 +87,7 @@
             background-color: #f9f9f9;
             padding: 16px;
             border-radius: 8px;
-            border: 1px solid #e0e0e0;
+            border: 1px solid var(--color-border);;
         }
         */
         .reviews-list {
@@ -89,23 +99,23 @@
         .review-card {
             flex: 1;
             min-width: 220px;
-            background-color: #ffffff;
-            border: 1px solid #e0e0e0;
-            border-radius: 12px;
+            background-color: var(--color-card);
+            border: 1px solid var(--color-border);;
+            border-radius: var(--border-radius-card);;
             padding: 20px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         }
         .reviewer-info {
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
+            gap: var(--border-radius-card);;
+            margin-bottom: var(--border-radius-card);;
         }
         .avatar {
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background-color: #003580;
+            background-color: var(--color-primary);
             color: white;
             font-weight: bold;
             font-size: 16px;
@@ -117,12 +127,12 @@
         .reviewer-name {
             font-size: 14px;
             font-weight: bold;
-            color: #222222;
+            color: var(--color-text-main);
             margin: 0;
         }
         .reviewer-country {
-            font-size: 12px;
-            color: #777777;
+            font-size: var(--border-radius-card);;
+            color: var(--color-text-muted);;
             margin: 0;
         }
         .review-quote {
@@ -131,5 +141,30 @@
             line-height: 1.6;
             margin: 0;
             font-style: italic;
+        }
+        .full-text {
+            display: none;
+        }
+        .full-text.visible {
+            display: inline;
+        }
+        .read-more-btn {
+            background: none;
+            border: none;
+            color: var(--color-primary);
+            font-size: 13px;
+            cursor: pointer;
+            padding: 6px 0;
+            font-weight: bold;
+        }
+        .read-more-btn:hover{
+            text-decoration: underline;
+        }
+        .review-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
         }
     </style>
