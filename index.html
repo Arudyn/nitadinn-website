@@ -1,92 +1,325 @@
 <!DOCTYPE html>
-<html lang=""en">
+<html lang="en">
 <head>
-    <meta charset=""UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <title>NitaDinn Guest House</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NitaDinn Guest House — Penarik Beach, Terengganu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-    <h1>NitaDinn Guest House</h1>
-    <p>PT19420 Pantai Peranginan Rhu 10 Penarek, 22120 Kampong Ru Sepuloh, Malaysia</p>
-    <div class="score-row">
-        <span class="score-badge">9.3</span>
-        <span class="score-label">Superb</span>
-        <span class="review-count">27 reviews</span>
+    <nav>
+  <div class="nav-logo"><span>NitaDinn</span> Guest House</div>
+  <ul class="nav-links">
+    <li><a href="#rooms">Rooms</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#booking">Contact</a></li>
+  </ul>
+  <a href="#booking" class="nav-cta">Book Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="padding:0;">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Penarik Beach · Terengganu, Malaysia</p>
+    <h1 class="hero-title">Your home<br>by the <em>sea</em></h1>
+    <p class="hero-desc">
+      A cozy Muslim-friendly guest house just 3 minutes from Penarik Beach. 
+      Clean air-conditioned rooms, free WiFi, fully equipped kitchen — 
+      come as a guest, leave as a friend.
+    </p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn-primary">Check Availability</a>
+      <a href="#rooms" class="btn-ghost">See the rooms</a>
     </div>
-    <img src="https://placehold.co/800x400" alt="NitaDinn Guest House exterior">
-    <h2>Facilities</h2>
-    <ul class="facilities-list">
-        <li>Free Wifi</li>
-        <li>Free parking</li>
-        <li>Air conditioning</li>
-        <li>Sea view</li>
-        <li>BBQ Facilities</li>
-        <li>Private bathroom</li>
-        <li>Kitchen</li>
-        <li>Terrace</li>
-    </ul>
-    <h2>Guest Reviews</h2>
-    <!-- Obsolete
-    <ul class="reviews-list">
+    <div class="hero-badges">
+      <div class="badge-item">
+        <div class="badge-num">9.3</div>
+        <div class="badge-label">Guest Rating</div>
+      </div>
+      <div class="badge-item">
+        <div class="badge-num">27</div>
+        <div class="badge-label">Reviews</div>
+      </div>
+      <div class="badge-item">
+        <div class="badge-num">5 min</div>
+        <div class="badge-label">To Redang Jetty</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-grid">
+      <div class="hero-img-main">
+        <div class="img-placeholder">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <img src="https://raw.githubusercontent.com/Arudyn/nitadinn-website/refs/heads/main/images/front%20house.jpg">
+        </div>
+      </div>
+      <div class="hero-img-row">
+        <div>
+          <div class="img-placeholder">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <img src="https://raw.githubusercontent.com/Arudyn/nitadinn-website/refs/heads/main/images/living%20room.jpg">
+          </div>
+        </div>
+        <div>
+          <div class="img-placeholder">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <img src="https://raw.githubusercontent.com/Arudyn/nitadinn-website/refs/heads/main/images/outdoor.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="photo-tag">Penarik Beach · 3 min walk</div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="amenities" id="amenities">
+  <p class="section-label">Facilities</p>
+  <h2 class="section-title">Everything you need</h2>
+  <div class="amenities-grid">
+    <div class="amenity-card"><div class="amenity-icon">🌊</div><div class="amenity-name">Sea View</div></div>
+    <div class="amenity-card"><div class="amenity-icon">❄️</div><div class="amenity-name">Air Conditioning</div></div>
+    <div class="amenity-card"><div class="amenity-icon">📶</div><div class="amenity-name">Free WiFi</div></div>
+    <div class="amenity-card"><div class="amenity-icon">🅿️</div><div class="amenity-name">Free Parking</div></div>
+    <div class="amenity-card"><div class="amenity-icon">🍳</div><div class="amenity-name">Full Kitchen</div></div>
+    <div class="amenity-card"><div class="amenity-icon">🔥</div><div class="amenity-name">BBQ Facilities</div></div>
+    <div class="amenity-card"><div class="amenity-icon">🛁</div><div class="amenity-name">Private Bathroom</div></div>
+    <div class="amenity-card"><div class="amenity-icon">📺</div><div class="amenity-name">Netflix / TV</div></div>
+    <div class="amenity-card"><div class="amenity-icon">🏡</div><div class="amenity-name">Terrace / Patio</div></div>
+  </div>
+</section>
+
+<!-- ROOMS -->
+<section class="rooms" id="rooms">
+  <div class="rooms-header">
+    <div>
+      <p class="section-label">Accommodation</p>
+      <h2 class="section-title">Two bedrooms,<br>entire home is yours</h2>
+    </div>
+    <p style="font-size:0.85rem;color:var(--muted);max-width:300px;">
+      The whole 56 m² property is exclusively for your group — no shared spaces with strangers.
+    </p>
+  </div>
+  <div class="room-grid">
+    <div class="room-card">
+      <div class="room-img">
+        <div class="img-placeholder">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <img src="https://raw.githubusercontent.com/Arudyn/nitadinn-website/refs/heads/main/images/bedroom%201.jpg">
+        </div>
+      </div>
+      <div class="room-info">
+        <div class="room-name">First Bedroom</div>
+        <div class="room-details">
+          <span class="room-detail">🛏 1 Double Bed</span>
+          <span class="room-detail">❄️ Air Conditioning</span>
+          <span class="room-detail">🚿 Private Bathroom</span>
+        </div>
+        <div class="room-price">Included in whole-house booking</div>
+      </div>
+    </div>
+    <div class="room-card">
+      <div class="room-img">
+        <div class="img-placeholder">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <img src="https://raw.githubusercontent.com/Arudyn/nitadinn-website/refs/heads/main/images/bedroom%202.jpg">
+        </div>
+      </div>
+      <div class="room-info">
+        <div class="room-name">Second Bedroom</div>
+        <div class="room-details">
+          <span class="room-detail">🛏 1 Double Bed</span>
+          <span class="room-detail">❄️ Air Conditioning</span>
+          <span class="room-detail">🚿 Private Bathroom</span>
+        </div>
+        <div class="room-price">Included in whole-house booking</div>
+      </div>
+    </div>
+  </div>
+  <p style="margin-top:1.5rem;font-size:0.82rem;color:var(--muted);text-align:center;">
+    Accommodates up to 5 guests · Check-in from 3:00 PM · Check-out by 12:00 PM
+  </p>
+</section>
+
+<!-- LOCATION -->
+<section class="location" id="location" style="padding:6rem 5rem;">
+  <div class="location-grid">
+    <div>
+      <p class="section-label">Location</p>
+      <h2 class="section-title">Right on the doorstep of everything</h2>
+      <p class="section-body" style="color:rgba(255,255,255,0.65);margin-bottom:0;">
+        Set in a peaceful fishing village in Penarik, Terengganu — minutes from the beach, seafood restaurants, and the Redang Island jetty.
+      </p>
+      <ul class="nearby-list">
         <li>
-            <strong>Nadzir</strong> - Malaysia
-            <p>"Comfortable accomodation, clean and spacious house, close to the sea with peaceful view</p>
+          <span>Penarik Beach</span>
+          <span class="nearby-divider"></span>
+          <span class="nearby-dist">3 min walk</span>
         </li>
         <li>
-            <strong>Munirah</strong> - Malaysia
-            <p>"Strategic location, quick access to dining and beach fun. A peaceful atmosphere."</p>
+          <span>Redang Island Jetty</span>
+          <span class="nearby-divider"></span>
+          <span class="nearby-dist">5 min drive</span>
         </li>
         <li>
-            <strong>Ruqayyah</strong> - United Kingdom
-            <p>"This property is across the road from the beach. On Friday mornings there is a market from 8am-noon."</p>
+          <span>ICT Ikan Celup Tepung</span>
+          <span class="nearby-divider"></span>
+          <span class="nearby-dist">Steps away</span>
         </li>
-    </ul>>
-    -->
-    <div class="reviews-list">
-        <div class="review-card">
-            <div class="reviewer-info">
-                <div class="avatar">N</div>
-            <div>
-            <p class="reviewer-name">Nadzir</p>
-            <p class="reviewer-country">Malaysia</p>
-        </div>
+        <li>
+          <span>Friday Morning Market</span>
+          <span class="nearby-divider"></span>
+          <span class="nearby-dist">Across the road</span>
+        </li>
+        <li>
+          <span>Sultan Mahmud Airport</span>
+          <span class="nearby-divider"></span>
+          <span class="nearby-dist">42 km</span>
+        </li>
+      </ul>
     </div>
-    <p class="review-quote">
-        <span class="short-text">"Comfortable accommodation, clean and spacious house,"</span>
-        <span class="full-text"> close to the sea with a peaceful view.</span>
-        </p>
-        <button class="read-more-btn">Read more</button>
+    <div class="location-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.866237255622!2d102.83075557572188!3d5.586780494393929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7ab21b81e698d%3A0x64049190323b5625!2sNitaDinn%20Guest%20House%20-%20Penarik!5e0!3m2!1sen!2smy!4v1775031994722!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+      <span>PT19420 Pantai Peranginan Rhu 10<br>Penarek, 22120 Terengganu</span>
     </div>
-        <div class="review-card">
-            <div class="reviewer-info">
-                <div class="avatar">M</div>
-            <div>
-            <p class="reviewer-name">Munirah</p>
-            <p class="reviewer-country">Malaysia</p>
-        </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="reviews-header">
+    <div>
+      <p class="section-label">Guest Reviews</p>
+      <h2 class="section-title">What guests are saying</h2>
     </div>
-    <p class="review-quote">
-        <span class="short-text">"Strategic location, quick access to dining and beach fun."</span>
-        <span class="full-text"> A peaceful atmosphere.</span>
-        </p>
-        <button class="read-more-btn">Read more</button>
+    <div class="score-display">
+      <div class="score-big">9.3</div>
+      <div class="score-label">Superb · 27 reviews on Booking.com</div>
     </div>
-        <div class="review-card">
-            <div class="reviewer-info">
-                <div class="avatar">R</div>
-            <div>
-            <p class="reviewer-name">Ruqayyah</p>
-            <p class="reviewer-country">United Kingdom</p>
-        </div>
+  </div>
+  <div class="review-grid">
+    <div class="review-card">
+      <p class="review-text">"Comfortable accommodation, air conditioning in every room including the living room, clean and spacious house, close to the sea with a peaceful view."</p>
+      <div class="review-author">
+        <div class="review-avatar">N</div>
+        <div><div class="review-name">Nadzir</div><div class="review-country">Malaysia</div></div>
+      </div>
     </div>
-    <p class="review-quote">
-        <span class="short-text">"This property is across the road from the beach."</span>
-        <span class="full-text"> On Friday mornings there is a market from 8am-noon. It brings the area alive as it is more on the quieter side during the week.</span>
-        </p>
-        <button class="read-more-btn">Read more</button>
-    </div>        
-</div>    
+    <div class="review-card">
+      <p class="review-text">"Its strategic location allows for quick access to both dining and beach fun without heavy traffic. A peaceful atmosphere for everyone to enjoy the holiday."</p>
+      <div class="review-author">
+        <div class="review-avatar">M</div>
+        <div><div class="review-name">Munirah</div><div class="review-country">Malaysia</div></div>
+      </div>
+    </div>
+    <div class="review-card">
+      <p class="review-text">"This property is across the road from the beach. On a Friday morning there is a market from 8am–noon. It brings the area alive!"</p>
+      <div class="review-author">
+        <div class="review-avatar">R</div>
+        <div><div class="review-name">Ruqayyah</div><div class="review-country">United Kingdom</div></div>
+      </div>
+    </div>
+    <div class="review-card">
+      <p class="review-text">"The location of the property is excellent, very close to the beach. The facilities are also well-equipped, and the host is extremely nice."</p>
+      <div class="review-author">
+        <div class="review-avatar">Li</div>
+        <div><div class="review-name">Li</div><div class="review-country">China</div></div>
+      </div>
+    </div>
+    <div class="review-card">
+      <p class="review-text">"My stay was very comfortable with clean rooms and pleasant to stay in a calm place. The location was convenient and facilities were well maintained."</p>
+      <div class="review-author">
+        <div class="review-avatar">J</div>
+        <div><div class="review-name">Jayanthi</div><div class="review-country">Malaysia</div></div>
+      </div>
+    </div>
+    <div class="review-card">
+      <p class="review-text">"Brother Din & Sister Nita very helpful. The house is clean and beautiful, aircon is cold. If you want breakfast you can just walk there. Will return!"</p>
+      <div class="review-author">
+        <div class="review-avatar">Im</div>
+        <div><div class="review-name">Im</div><div class="review-country">Malaysia</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="booking" id="booking">
+  <div class="booking-inner">
+    <p class="section-label">Enquiry</p>
+    <h2 class="section-title" style="margin-bottom:0.3rem;">Check availability</h2>
+    <p style="font-size:0.88rem;color:var(--muted);">Fill in your details and Kak Nita will get back to you via WhatsApp.</p>
+    <form class="form-grid" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Ahmad bin Abdullah" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">WhatsApp Number</label>
+        <input type="tel" id="phone" placeholder="+60 12-345 6789" required />
+      </div>
+      <div class="form-group">
+        <label for="checkin">Check-in Date</label>
+        <input type="date" id="checkin" required />
+      </div>
+      <div class="form-group">
+        <label for="checkout">Check-out Date</label>
+        <input type="date" id="checkout" required />
+      </div>
+      <div class="form-group">
+        <label for="guests">Number of Guests</label>
+        <select id="guests">
+          <option>1 guest</option>
+          <option>2 guests</option>
+          <option>3 guests</option>
+          <option>4 guests</option>
+          <option>5 guests</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="email">Email (optional)</label>
+        <input type="email" id="email" placeholder="your@email.com" />
+      </div>
+      <div class="form-group full">
+        <label for="message">Special Requests</label>
+        <textarea id="message" placeholder="Early check-in, dietary needs, anything else..."></textarea>
+      </div>
+      <div class="form-group full">
+        <button type="submit" class="form-submit">Send Enquiry via WhatsApp</button>
+        <p class="form-note">⚑ Muslim-friendly property · No alcohol · Halal food only · No parties</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- HOUSE RULES -->
+<section class="rules" style="padding-top:2rem;padding-bottom:5rem;">
+  <p class="section-label">House Rules</p>
+  <div class="rules-grid">
+    <div class="rule-item"><span class="rule-icon">🕒</span><div><div class="rule-title">Check-in</div><div class="rule-detail">From 3:00 PM to 11:00 PM</div></div></div>
+    <div class="rule-item"><span class="rule-icon">🚪</span><div><div class="rule-title">Check-out</div><div class="rule-detail">By 12:00 PM</div></div></div>
+    <div class="rule-item"><span class="rule-icon">🚭</span><div><div class="rule-title">No Smoking</div><div class="rule-detail">Non-smoking throughout</div></div></div>
+    <div class="rule-item"><span class="rule-icon">🐾</span><div><div class="rule-title">No Pets</div><div class="rule-detail">Pets are not allowed</div></div></div>
+    <div class="rule-item"><span class="rule-icon">🎉</span><div><div class="rule-title">No Parties</div><div class="rule-detail">Events not permitted</div></div></div>
+    <div class="rule-item"><span class="rule-icon">🕌</span><div><div class="rule-title">Muslim-Friendly</div><div class="rule-detail">Halal only · No alcohol</div></div></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo"><span>NitaDinn</span> Guest House</div>
+  <div class="footer-links">
+    <a href="#rooms">Rooms</a>
+    <a href="#location">Location</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#booking">Book Now</a>
+  </div>
+  <div class="footer-copy">© 2025 NitaDinn Guest House · Penarik, Terengganu</div>
+</footer>
     <script src="js/script.js"></script>
 </body>
 </html>

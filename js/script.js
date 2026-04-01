@@ -1,15 +1,24 @@
-const buttons = document.querySelectorAll(".read-more-btn");
+  function handleSubmit(e) {
+    e.preventDefault();
+    const name    = document.getElementById('name').value;
+    const phone   = document.getElementById('phone').value;
+    const checkin = document.getElementById('checkin').value;
+    const checkout= document.getElementById('checkout').value;
+    const guests  = document.getElementById('guests').value;
+    const message = document.getElementById('message').value;
 
-buttons.forEach(function(button) {
-  button.addEventListener("click", function() {
-    const card = button.closest(".review-card");
-    const fullText = card.querySelector(".full-text");
-    fullText.classList.toggle("visible");
+    const text = encodeURIComponent(
+      `Hi Kak Nita! I'd like to enquire about booking NitaDinn Guest House.\n\n` +
+      `Name: ${name}\nPhone: ${phone}\nCheck-in: ${checkin}\nCheck-out: ${checkout}\nGuests: ${guests}\n` +
+      (message ? `Notes: ${message}` : '')
+    );
+    window.open(`https://wa.me/60199830699?text=${text}`, '_blank');
+  }
 
-    if (button.textContent === "Read more") {
-      button.textContent = "Show less";
-    } else {
-      button.textContent = "Read more";
-    }
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('checkin').min = today;
+  document.getElementById('checkout').min = today;
+
+  document.getElementById('checkin').addEventListener('change', function() {
+    document.getElementById('checkout').min = this.value;
   });
-});
