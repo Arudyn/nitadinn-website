@@ -20,5 +20,5 @@
   document.getElementById('checkout').min = today;
 
   document.getElementById('checkin').addEventListener('change', function() {
-    document.getElementById('checkout').min = this.value;
+    document.getElementById('checkout').min = this.value;  
   });
